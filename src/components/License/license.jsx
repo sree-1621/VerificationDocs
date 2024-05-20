@@ -13,7 +13,8 @@ const LicenseVerify = () => {
     let [license,setLicense] = useState('');
     let [licenseDOB, setLicenseDOB] = useState('');
     let licenseipt = ((e) => {
-                            setLicense(e.target.value);
+                            let val = e.target.value.toUpperCase();
+                            setLicense(val);
                             setShowMyComponent(false);
                             });
     let licensedobipt = ((e) => {

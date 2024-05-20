@@ -14,7 +14,8 @@ const PassportVerify = () => {
     const [showMyComponent, setShowMyComponent] = useState(false);
 
     let passInput = ((e) => {
-        setPassport(e.target.value);
+        let val = e.target.value.toUpperCase();
+        setPassport(val);
         setShowMyComponent(false);
     });
     

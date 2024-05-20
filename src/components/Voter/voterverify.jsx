@@ -13,7 +13,8 @@ const VoterVerify = () => {
     let voterresponse;
 
     let voteript = ((e) => {
-        setVoter(e.target.value);
+        let val = e.target.value.toUpperCase()
+        setVoter(val);
         setShowMyComponent(false);
     });
 

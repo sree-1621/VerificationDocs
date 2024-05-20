@@ -2,7 +2,7 @@ import Cookies from 'js-cookie';
 import { useState } from 'react';
 import axios from "axios"
 import Swal from 'sweetalert2';
-import { CCard, CCardHeader, CCardBody, CCardTitle, CCardText, CListGroup, CListGroupItem } from '@coreui/react'
+import { CCard, CCardHeader, CCardBody, CCardText, CListGroup, CListGroupItem } from '@coreui/react'
 import { Tab, Box} from '@mui/material';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import AadharOTPverify from './aadharotpverify';
@@ -15,10 +15,9 @@ const AadharVerify = () => {
       };
 
     const token = Cookies.get('token');
-    const [aadharresponse, setAadharResponse] = useState(null);
+    const [aadharresponse, setAadharresponse] = useState(null);
 
     const [showMyComponent, setShowMyComponent] = useState(false);
-    const [pdflink, setPdfLink] = useState('');
     let [aadhar, setAadhar] = useState('');
     let aadhaript = ((e) => {
         setAadhar(e.target.value);
@@ -35,7 +34,7 @@ const AadharVerify = () => {
                 'Authorization':`Bearer ${token}`,}
         }).then(data => {
             if(data.data.status_code == 200){
-                setAadharResponse(data.data.data);
+                setAadharresponse(data.data.data);
                 Swal.fire({
                     icon: 'success',
                     title: 'Valid!',

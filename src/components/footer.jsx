@@ -10,7 +10,7 @@ const Footer = () => {
 
             </div>
             <div className="desc">
-                <p>© 2013-2022, Company.com, Inc. or its affiliates</p>
+                <p>© 2013-2022, Astiinfotech.com, Inc. or its affiliates</p>
             </div>
         </div>
      );

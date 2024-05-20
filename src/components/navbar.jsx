@@ -8,6 +8,9 @@ const Navbar = () => {
 
     let clearCookies = () => {
         Cookies.remove('token');
+        Cookies.remove('mode');
+        Cookies.remove('darkMode');
+        Cookies.remove('url');
     }
 
     return ( 
@@ -17,7 +20,7 @@ const Navbar = () => {
             </div>
             <div className="toolbar">
                 <div className="settings">
-                    <Link to="/Settings">{<SettingsIcon style={{color: 'white'}}/>}</Link>
+                    <Link to="/documentverify/settings">{<SettingsIcon style={{color: 'white'}}/>}</Link>
                 </div>
                 <div className="logout" onClick={clearCookies}>
                     <Link to='/'>{<LogoutRoundedIcon style={{color: 'white'}} />}</Link>

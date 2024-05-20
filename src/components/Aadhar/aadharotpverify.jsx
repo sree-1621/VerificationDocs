@@ -32,7 +32,7 @@ const AadharOTPverify = () => {
                 Swal.fire({
                     icon: 'success',
                     title: 'OTP Sent!',
-                    text: `OTP sent to the mobile number linked to ths Aadhar`,
+                    text: `OTP sent to the mobile number linked to this Aadhar`,
                     showCancelButton: true,                    
                     cancelButtonText: "Close",
                     confirmButtonColor: '#B2BABB'

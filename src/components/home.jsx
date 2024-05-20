@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../styles/home.css';
 
 const Home = () => {
