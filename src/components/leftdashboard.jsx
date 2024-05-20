@@ -1,5 +1,5 @@
 import '../styles/leftdashboard.css'
-import { Sidebar, Menu, MenuItem , SubMenu, useProSidebar} from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import HomeIcon from '@mui/icons-material/Home';

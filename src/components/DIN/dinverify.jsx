@@ -12,7 +12,8 @@ const DinVerify = () => {
     const [pdflink, setPdfLink] = useState('');
     let [din,setDin] = useState('');
     let dinIpt = ((e) => {
-        setDin(e.target.value);
+        let val = e.target.value.toUpperCase();
+        setDin(val);
         setShowMyComponent(false)
     })
 

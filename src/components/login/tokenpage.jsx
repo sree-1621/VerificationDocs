@@ -18,6 +18,8 @@ const Tokenpage = () => {
         }
         Cookies.set('token',t,{expires: 1,})
         Cookies.set('url','http://51.222.43.180:8901',{expires: 1,})
+        Cookies.set('darkMode', false);    
+        Cookies.set('mode', 'light') 
         navigate('/documentverify/');
     }
 

@@ -9,7 +9,8 @@ const Panlite = () => {
     const token = Cookies.get('token')
     let [pan, setPan] = useState('');
     let panipt = ((e) => {
-                            setPan(e.target.value);
+                            let val = e.target.value.toUpperCase();
+                            setPan(val);
                             setShowMyComponent(false);
                         });
     let PANresponse;

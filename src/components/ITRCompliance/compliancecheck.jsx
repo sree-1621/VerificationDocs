@@ -13,7 +13,8 @@ const ITRCompliance = () => {
 
     let [itr, setItr] = useState('');
     let itrIpt = ((e) => {
-        setItr(e.target.value);
+        let val = e.target.value.toUpperCase();
+        setItr(val);
         setShowMyComponent(false);
     })
 
